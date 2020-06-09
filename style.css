@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;0,800;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+header {
+  background: linear-gradient(rgba(1, 1, 1, 0.6), rgba(1, 1, 1, 0.6)),
+    url(assets/img/PortadaCyberpunk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  margin: auto;
+  border-bottom: 8px solid rgba(201, 201, 201, 0.9);
+}
+.contenedor-nav {
+  width: 100%;
+  background-color: rgba(1, 1, 1, 0.7);
+  padding-top: 12px;
+  height: 45px;
+  position: fixed;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+.links a:hover {
+  color: #fff000;
+  border-bottom: 1px solid #fff000;
+  transition: 0.7s ease-in-out;
+}
+.contenedor-icon {
+  margin-left: 15px;
+}
+
+.img-menu {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translateY(-5px);
+}
+header .titulo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  padding-top: 175px;
+}
+header .titulo h1 {
+  border: 2px solid #fff000;
+  padding: 7px 40px;
+  border-radius: 5px 0 5px 0;
+}
+header .titulo span {
+  font-weight: 300;
+  font-style: italic;
+  border-bottom: 0.5px solid #fff;
+  padding-bottom: 0;
+}
+header .titulo h1 span:hover {
+  color: #fff000;
+  border-bottom: none;
+  border-top: 0.5 solid #fff000;
+  transition: 0.7s ease-in-out;
+}
+main {
+  background: #c9c9c9;
+}
+main .about {
+  overflow: visible;
+  text-align: center;
+}
+.icono-v img {
+  height: 150px;
+  width: 170px;
+  border-radius: 50%;
+  margin-top: -70px;
+  border: 8px solid rgba(201, 201, 201, 0.8);
+}
+.texto-about {
+  width: 75%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.texto-about h3 {
+  margin-bottom: 10px;
+}
+.texto-about h3 span {
+  font-style: italic;
+  border-bottom: 2px solid #111;
+}
+.texto-about p b {
+  text-decoration: underline;
+}
+.texto-about p {
+  border: 3px dashed #fff000;
+  border-radius: 5px 0 5px 0;
+  font-size: 20px;
+  text-align: justify;
+  padding: 10px 30px;
+}
+.texto-about p:hover {
+  background: #fff000;
+  border-radius: 5px;
+}
+/*-------------     NEEEEEEEEEEWS    ---------------*/
+.titulo-news {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  background-color: black;
+  z-index: 10;
+}
+.titulo-news h3 {
+  color: #fff;
+  padding: 50px 0 0 0;
+  font-size: 70px;
+  letter-spacing: 15px;
+  font-style: italic;
+  margin-bottom: 0x;
+  padding-bottom: 20px;
+}
+.titulo-news h3:hover {
+  color: #fff000;
+  border-bottom: 1px solid #fff000;
+  transform: translateY(-15px);
+  transition: 0.7s ease-in-out;
+}
+.news-container {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 30px 20px;
+}
+.main-news {
+  width: 30%;
+  margin-right: 20px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px 0 5px 0;
+  background-color: #02d7f2;
+  color: black;
+}
+.main-news:hover {
+  background: #fff;
+}
+.main-news .fecha {
+  align-self: flex-end;
+}
+.main-news .news-text {
+  width: 70%;
+  align-self: center;
+}
+.sideNews-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.side-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 5px 30px 0;
+  align-items: center;
+  width: 45%;
+  border: 1px solid white;
+  border-radius: 5px 0 5px 0;
+  margin: 0 0 10px 0;
+}
+.side-news:hover {
+  background: #fff;
+  color: #111;
+}
+.side-news .fecha {
+  align-self: flex-end;
+}
+.side-news h3 {
+  width: 75%;
+}
+
+/*----------------------- Foooter-------------------------- */
+footer {
+  display: flex;
+  background: #111;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+}
+.contenedor-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.followUs {
+  color: #fff000;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.contenedor-redes div {
+  display: flex;
+}
+.fab.fa-twitter,
+.fab.fa-facebook-f,
+.fas.fa-share-alt-square,
+.fab.fa-instagram {
+  color: #443b47;
+  font-size: large;
+  padding: 5px;
+  transform: translateY(-4px);
+  border-radius: 3px;
+}
+.fab.fa-twitter:hover {
+  color: #fff;
+  background-color: #1da1f2;
+}
+.fab.fa-facebook-f:hover {
+  color: #fff;
+  background-color: #3b5998;
+}
+.fab.fa-instagram:hover {
+  color: #fff;
+  background-color: #f56a2f;
+}
+.fas.fa-share-alt-square:hover {
+  color: #dd4c36;
+  background-color: #fff;
+}
+.pagina {
+  width: 125px;
+  text-align: center;
+}
+.pagina a {
+  text-decoration: none;
+  color: #443b47;
+  text-align: center;
+}
+.pagina a:hover {
+  border-bottom: 1px solid #fff000;
+  letter-spacing: 2px;
+  color: #fff000;
+  transition: all 1s ease-in-out;
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(5px);
+}
+.contacto h4 {
+  color: #fff000;
+  margin-bottom: 5px;
+}
+.info p {
+  color: #fff000;
+  font-size: 12px;
+}
+.info p a {
+  text-decoration: none;
+  color: #443b47;
+  font-size: 12px;
+}
+.info p a:hover {
+  color: #fff000;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  /* mediaqueries del header */
+  header {
+    height: 200px;
+  }
+  header .titulo {
+    padding-top: 70px;
+  }
+  .titulo h1 {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+  .texto-about p {
+    font-size: 15px;
+  }
+  /* mediaqueries del news */
+  .main-news {
+    width: 90%;
+    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+  }
+  .main-news .news-text {
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+  .sideNews-container {
+    width: 90%;
+  }
+  /* mediaqueries del footer */
+
+  .contactUs {
+    align-self: center;
+  }
+}
+@media (max-width: 550px) {
+  .titulo-news {
+    margin-top: 40px;
+  }
+  .pagina {
+    display: none;
+  }
+}

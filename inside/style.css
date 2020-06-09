@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;0,800;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+header {
+  background: linear-gradient(rgba(1, 1, 1, 0.6), rgba(1, 1, 1, 0.6)),
+    url(../assets/img/PortadaCyberpunk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  margin: auto;
+}
+.contenedor-nav {
+  width: 100%;
+  background-color: rgba(1, 1, 1, 0.7);
+  padding-top: 12px;
+  height: 45px;
+  position: fixed;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+}
+
+.links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+.links a:hover {
+  color: #fff000;
+  border-bottom: 1px solid #fff000;
+  transition: 0.7s ease-in-out;
+}
+.contenedor-icon {
+  margin-left: 15px;
+}
+
+.img-menu {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translateY(-5px);
+}
+header .titulo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  padding-top: 95px;
+}
+header .titulo h1 {
+  border: 2px solid #fff000;
+  padding: 7px 40px;
+  border-radius: 5px 0 5px 0;
+}
+header .titulo span {
+  font-weight: 300;
+  font-style: italic;
+  border-bottom: 0.5px solid #fff;
+  padding-bottom: 0;
+}
+header .titulo h1 span:hover {
+  color: #fff000;
+  border-bottom: none;
+  border-top: 0.5 solid #fff000;
+  transition: 0.7s ease-in-out;
+}
+.titulo-galeria {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  z-index: 10;
+}
+.titulo-galeria h3 {
+  color: #fff;
+  padding: 50px 0 0 0;
+  font-size: 70px;
+  letter-spacing: 15px;
+  font-style: italic;
+  margin-bottom: 0x;
+  padding-bottom: 20px;
+}
+.titulo-galeria h3:hover {
+  color: #fff000;
+  border-bottom: 1px solid #fff000;
+  transform: translateY(-15px);
+  transition: 0.7s ease-in-out;
+}
+.galeria {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  z-index: 10000;
+}
+.galeria .foto {
+  width: 33.33%;
+  text-align: center;
+}
+.galeria .foto img {
+  height: 100%;
+}
+.galeria .foto img {
+  vertical-align: top;
+  width: 100%;
+  opacity: 0.7;
+}
+.galeria .foto img:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transform: scale(120%);
+  z-index: 1000;
+}
+footer {
+  display: flex;
+  background: #111;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+}
+.contenedor-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.followUs {
+  color: #fff000;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.contenedor-redes div {
+  display: flex;
+}
+.fab.fa-twitter,
+.fab.fa-facebook-f,
+.fas.fa-share-alt-square,
+.fab.fa-instagram {
+  color: #443b47;
+  font-size: large;
+  padding: 5px;
+  transform: translateY(-4px);
+  border-radius: 3px;
+}
+.fab.fa-twitter:hover {
+  color: #fff;
+  background-color: #1da1f2;
+}
+.fab.fa-facebook-f:hover {
+  color: #fff;
+  background-color: #3b5998;
+}
+.fab.fa-instagram:hover {
+  color: #fff;
+  background-color: #f56a2f;
+}
+.fas.fa-share-alt-square:hover {
+  color: #dd4c36;
+  background-color: #fff;
+}
+.pagina {
+  width: 125px;
+  text-align: center;
+}
+.pagina a {
+  text-decoration: none;
+  color: #443b47;
+  text-align: center;
+}
+.pagina a:hover {
+  border-bottom: 1px solid #fff000;
+  letter-spacing: 2px;
+  color: #fff000;
+  transition: all 1s ease-in-out;
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(5px);
+}
+.contacto h4 {
+  color: #fff000;
+  margin-bottom: 5px;
+}
+.info p {
+  color: #fff000;
+  font-size: 12px;
+}
+.info p a {
+  text-decoration: none;
+  color: #443b47;
+  font-size: 12px;
+}
+.info p a:hover {
+  color: #fff000;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  /* mediaqueries del header */
+  header {
+    height: 200px;
+  }
+  header .titulo {
+    padding-top: 100px;
+  }
+  .titulo-galeria h3 {
+    font-size: 50px;
+  }
+  .titulo h1 {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .galeria .foto {
+    width: 50%;
+  }
+  .galeria .foto:last-child {
+    width: 100%;
+  }
+  .texto-about p {
+    font-size: 15px;
+  }
+
+  /* mediaqueries del footer */
+
+  .contactUs {
+    align-self: center;
+  }
+}
+@media (max-width: 550px) {
+  .pagina {
+    display: none;
+  }
+  .titulo-galeria h3 {
+    font-size: 30px;
+  }
+}
